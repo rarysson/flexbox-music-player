@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4279f73342.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="leftbar">
+				<div class="logo">
+					<div class="logo-pill"></div>
+					<div class="logo-pill"></div>
+					<div class="logo-pill"></div>
+				</div>
+				<i class="fas fa-chevron-left fa-lg" style="color: white; opacity: 0.2;"></i>
+			</div>
+
+			<div class="rightbar">
+				<div class="search">
+					<i class="fas fa-search" style="opacity: 0.5;"></i>
+					<input type="text" placeholder="Search">
+				</div>
+
+				<div class="user">
+					<i class="far fa-bell fa-lg" style="opacity: 0.5;"></i>
+					<button>Free Upgrade</button>
+					<i class="fas fa-user-circle fa-2x"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle">
+			<div class="leftbar">
+				<div class="discover">
+					<p>Discover</p>
+					<a href="#" class="option">
+						<i class="fas fa-fire fa-lg"></i>
+						<p>Hotlist</p>
+					</a>
+					<hr>
+					<a href="#" class="option">
+						<i class="fas fa-boxes fa-lg"></i>
+						<p>Collections</p>
+					</a>
+				</div>
+
+				<div class="library">
+					<p>Library</p>
+					<a href="#" class="option">
+						<i class="far fa-star fa-lg"></i>
+						<p>Favorites</p>
+					</a>
+					<hr>
+					<a href="#" class="option">
+						<i class="fas fa-music fa-lg"></i>
+						<p>Playlists</p>
+					</a>
+					<hr>
+					<a href="#" class="option">
+						<i class="fas fa-compact-disc fa-lg"></i>
+						<p>Albums</p>
+					</a>
+					<hr>
+					<a href="#" class="option">
+						<i class="fas fa-microphone-alt fa-lg"></i>
+						<p>Artists</p>
+					</a>
+				</div>
+
+				<button type="button">Subscribe</button>
+			</div>
+
+			<div class="rightbar">
+				<div class="track">
+					<div class="title-track">
+						<p><b>New</b> <span style="opacity: 0.35;">Releases</span></p>
+						<div class="arrows">
+							<i class="fas fa-arrow-left fa-lg"></i>
+							<i class="fas fa-arrow-right fa-lg"></i>
+						</div>
+					</div>
+
+					<div class="albums">
+						<div class="album">
+							<img src="./assets/album_bbno$.png" alt="">
+								<div class="info-song">
+									<p><b>recess</b></p>
+									<p style="opacity: 0.5;">bbno$</p>
+								</div>
+						</div>
+
+						<div class="album">
+							<img src="./assets/album_powerwolf.png" alt="">
+								<div class="info-song">
+									<p><b>The Sacrament of Sin</b></p>
+									<p style="opacity: 0.5;">Powerwolf</p>
+								</div>
+						</div>
+
+						<div class="album">
+							<img src="./assets/album_shotgun.png" alt="">
+								<div class="info-song">
+									<p><b>God's Favorite Rappers</b></p>
+									<p style="opacity: 0.5;">Shotgun Willy, Yung Craka</p>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="track">
+					<div class="title-track">
+						<p><b>Popular</b> <span style="opacity: 0.35;">Artists</span></p>
+						<div class="arrows">
+							<i class="fas fa-arrow-left fa-lg"></i>
+							<i class="fas fa-arrow-right fa-lg"></i>
+						</div>
+					</div>
+
+					<div class="albums">
+						<div class="album">
+							<img src="./assets/album_bbno$.png" alt="">
+								<div class="info-song">
+									<p><b>recess</b></p>
+									<p style="opacity: 0.5;">bbno$</p>
+								</div>
+						</div>
+
+						<div class="album">
+							<img src="./assets/album_powerwolf.png" alt="">
+								<div class="info-song">
+									<p><b>The Sacrament of Sin</b></p>
+									<p style="opacity: 0.5;">Powerwolf</p>
+								</div>
+						</div>
+
+						<div class="album">
+							<img src="./assets/album_shotgun.png" alt="">
+								<div class="info-song">
+									<p><b>God's Favorite Rappers</b></p>
+									<p style="opacity: 0.5;">Shotgun Willy, Yung Craka</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="player">
+			<div class="main">
+				<div class="current-song">
+					<img src="./assets/player.png" alt="">
+					<div class="info-song">
+						<p>Famous Ocean & KungFu</p>
+						<p style="opacity: 0.6;">Savage</p>
+					</div>
+				</div>
+
+				<div class="control">
+					<i class="fas fa-step-backward fa-lg"></i>
+					<i class="fas fa-play fa-lg"></i>
+					<i class="fas fa-step-forward fa-lg"></i>
+					<input type="range" min="0" max="10" value="5" disabled>
+					<p>1:50 / 3:01</p>
+				</div>
+
+				<div class="extra">
+					<i class="far fa-heart fa-lg"></i>
+					<i class="fas fa-ellipsis-h fa-lg"></i>
+					<hr>
+					<i class="fas fa-volume-up fa-lg"></i>
+					<i class="fas fa-sync fa-lg"></i>
+					<i class="fas fa-random fa-lg"></i>
+				</div>
+			</div>
+			
+			<div class="right-side">
+				<i class="fas fa-chevron-left fa-lg" 
+				style="
+					color: white; 
+					opacity: 0.6;
+					transform: rotate(90deg);
+				"></i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

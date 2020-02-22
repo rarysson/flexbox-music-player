@@ -1,0 +1,410 @@
+/*General configuration */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	opacity: 0.2;
+	width: 90%;
+	margin: 0 auto;
+}
+
+button {
+	cursor: pointer;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-width: 1300px;
+}
+
+.leftbar {
+	flex: 1 1 15%;
+	background-color: #2a1b2e;
+}
+
+.rightbar {
+	flex: 1 1 85%;
+	background-color: #f7f4fa;
+	padding: 3% 5% 0 2%;
+}
+/*General configuration */
+
+
+
+/* Header configuration */
+.header {
+	flex: 1;
+	display: flex;
+}
+
+.header .leftbar {
+	background-color: #2a1b2ef1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo-pill {
+	width: 8px;
+	height: 30px;
+	border-radius: 20px;
+	margin: 0 2px;
+}
+
+.logo-pill:first-child {
+	background-color: cyan;
+}
+
+.logo-pill:nth-child(2) {
+	height: 20px;
+	background-color: crimson;
+}
+
+.logo-pill:last-child {
+	background-color: orange;
+}
+
+.header .rightbar {
+	background-color: white;
+	display: flex;
+	padding: 1% 2%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search {
+	margin-bottom: 0.1%;
+}
+
+input[type="text"] {
+	border: none;
+	font-size: 18px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+	border-bottom: 1px solid black;
+}
+
+.header button {
+	background-color: #f3d4d7;
+	color: #948486;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+.header button:hover {
+    background: #f7e4e6;
+}
+
+.header .rightbar .user {
+	display: flex;
+	align-items: center;
+}
+
+.header .rightbar .user > * {
+	margin: 0 15px;
+}
+/* Header configuration */
+
+
+
+/* The middle configuration */
+.middle {
+	flex: 10;
+	display: flex;
+}
+
+.middle .leftbar {
+	padding: 3% 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	font-size: 16px;
+}
+
+.discover > p,
+.library > p {
+	font-size: 18px;
+}
+
+.option {
+	opacity: 0.6;
+	display: flex;
+	margin: 12% 10px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.option i {
+	flex: 1;
+}
+
+.option p {
+	flex: 3;
+}
+
+.rightbar hr {
+	width: 100%;
+	margin: 2% 0;
+}
+
+.option:hover {
+	opacity: 1;
+	color: #e8c7a5;
+}
+
+.middle button {
+	padding: 10% 0;
+	font-size: 18px;
+	color: white;
+	background-color: #a3817e;
+	border: none;
+	border-radius: 10px;
+	margin: 0 5%;
+}
+
+.middle button:hover {
+	background-color: #c49d9a;
+}
+
+.arrows {
+	opacity: 0.4;
+}
+
+.arrows i:first-child {
+	margin-right: 20px;
+}
+
+.track {
+	display: flex;
+	flex-direction: column;
+}
+
+.title-track {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-track p {
+	font-size: 28px;
+}
+
+.album {
+	display: inline-block;
+	margin: 2% 2% 0 0;
+}
+
+.album img {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	border-bottom-left-radius: 0;
+}
+
+.album .info-song p:nth-child(2) {
+	margin-top: 5px;
+	font-size: 12px;
+}
+/* The middle configuration */
+
+
+
+
+/* Player configuration */
+.player {
+	flex: 1;
+	display: flex;
+	color: white;
+}
+
+.main {
+	flex: 10;
+	background-color: #2a1b2ef1;
+	padding: 1.2% 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main i {
+	opacity: 0.5;
+	position: relative;
+}
+
+.main i:hover {
+	opacity: 1;
+}
+
+.current-song {
+	display: flex;
+	font-size: 14px;
+}
+
+.current-song img {
+	align-self: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 12px;
+	margin-right: 20px;
+}
+
+.info-song {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.control {
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.control p {
+	opacity: 0.5;
+	font-size: 12px;
+}
+
+.control * {
+	margin: 0 10px;
+}
+
+.player .extra {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.extra > * {
+	margin: 0 10px;
+}
+
+.extra hr {
+	height: 100%;
+}
+
+.player .right-side {
+	flex: 0.5;
+	background-color: #2a1b2e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Player configuration */
+
+
+
+/* Player timer configuration */
+/* From: https://www.cssportal.com/style-input-range/ */
+input[type="range"] {
+	-webkit-appearance: none;
+	margin: 0 30px;
+	width: 55%;
+	background-color: transparent;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: #E8C7A5;
+	border-radius: 1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	border: 0px solid #F6BA3F;
+	height: 10px;
+	width: 10px;
+	border-radius: 20px;
+	background: #F6BA3F;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -4px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+	background: #E8C7A5;
+}
+
+input[type="range"]::-moz-range-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: #E8C7A5;
+	border-radius: 1px;
+}
+
+input[type="range"]::-moz-range-thumb {
+	border: 0px solid #F6BA3F;
+	height: 10px;
+	width: 10px;
+	border-radius: 20px;
+	background: #F6BA3F;
+	cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+	background: #E8C7A5;
+	border-radius: 2px;
+}
+
+input[type="range"]::-ms-fill-upper {
+	background: #E8C7A5;
+	border-radius: 2px;
+}
+
+input[type="range"]::-ms-thumb {
+	margin-top: 1px;
+	border: 0px solid #F6BA3F;
+	height: 10px;
+	width: 10px;
+	border-radius: 20px;
+	background: #F6BA3F;
+	cursor: pointer;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+	background: #E8C7A5;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+	background: #E8C7A5;
+}
+/* Player timer configuration */
